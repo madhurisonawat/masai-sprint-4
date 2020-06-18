@@ -1,5 +1,6 @@
 
 function storeInfo(){
+
     var email = document.getElementById('email').value
     var pass = document.getElementById('pass').value
  
@@ -10,20 +11,28 @@ function storeInfo(){
     var data = localStorage.getItem("user")
 
     var userdata = JSON.parse(data) || []
-    for(var i=0;i<userdata.length;i++){
-        if(email==userdata[i][0]){
-            alert('already registered')
-        }
-    }
     userdata.push(arr)
 
     var str = JSON.stringify(userdata)
     localStorage.setItem("data", str)
-    window.location ="login.html"
+    var ema =document.getElementById('email').value 
+    var password =document.getElementById('pass').value 
+    var address =document.getElementById('inputAddress').value 
+    var city =document.getElementById('inputCity').value 
+    var state =document.getElementById('inputState').value 
+    var zip =document.getElementById('inputZip').value 
+
+if(ema=="" || password =="" || address=="" || city=="" ||state=="" ||zip==""){
+    alert('All fields are required')
 }
 
-
-
+else{
+ 
+window.location ="index1.html"
+}
+}
 
 var sub = document.getElementById('sub')
 sub.addEventListener('click',storeInfo)
+
+
