@@ -29,4 +29,4 @@ git clone https://github.com/madhurisonawat/Holiday-app.git
 npm run start
 
 # Image of app
-!()<img src="holidays/public/holiday-app.png">
+!()<img src="resources/car-app.png">
