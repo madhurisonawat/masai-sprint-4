@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <style>
+            #col{
+                color:#989B9D 
+            }
+            #about{
+                background-color: #989B9D ;
+                margin:50px
+            }
+            #des{
+                background-color: #989B9D  ;
+            }
+            tr,td{
+               border:1px solid black;
+               padding:15px
+           }
+        </style>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="bg-secondary font-weight-bolder text-light p-3" style="height:80px">
+                Simple Vehicle Rental System
+            <ul class="nav nav-tabs justify-content-end" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-light" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-light" id="login-tab" data-toggle="tab" href="#login" role="tab" aria-controls="login" aria-selected="false">Login</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-light" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contacts</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link text-light" id="terms-tab" data-toggle="tab" href="#terms" role="tab" aria-controls="terms" aria-selected="false">Terms & conditions</a>
+            </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                <div>
+                    <h3 id="col" class="font-italic text-center text-dark p-2 m-2">Find Your Dream Cars For Rent!</h3>
+                    <h5 id="col" class="text-center text-dark">Mercedes-Benz - Toyoto - Range Rovers</h5>
+                </div>
+    
+                <div class="row text-dark">
+                    <div class="card col-4" style="width: 18rem;">
+                        <img src="resources/car mb.webp" class="card-img-top img-fluid" alt="mercedez">
+                        <div class="card-body">
+                          <h5 class="card-title">Rs-22000</h5>
+                          <p class="card-text">Car Name>Modal Mercedes-Benz.</p>
+                         
+                        </div>
+                    </div>
+                    <div class="card col-4" style="width: 18rem;">
+                        <img src="resources/To Fo.webp" class="card-img-top img-fluid" alt="toyoto">
+                        <div class="card-body">
+                          <h5 class="card-title">Rs-15000</h5>
+                          <p class="card-text">Car Name>Modal Toyoto-Fortuner.</p>
+                        
+                        </div>
+                    </div>
+                    <div class="card col-4" style="width: 18rem;">
+                        <img src="resources/ra ro.jpg" class="card-img-top img-fluid" alt="ranger">
+                        <div class="card-body">
+                          <h5 class="card-title">Rs-30000</h5>
+                          <p class="card-text">Car Name>Modal Range-Rover.</p>
+                          
+                        </div>
+                    </div>
+                </div>
+    
+                <div id ="about"class="row p-5">
+                    <div id="des"class="card col-4" style="width: 18rem;">
+                        <div class="card-header  font-weight bolder">
+                         Our Company
+                        </div>
+                        <ul id="des" class="list-group list-group-flush">
+                          <li id="des" class="list-group-item text-light"> About us</li>
+                          <li id="des" class="list-group-item text-light">Terms</li>
+                         
+                        </ul>
+                    </div>
+                    <div id="des"class="card col-4" style="width: 18rem;">
+                    <div class="card-header  font-weight bolder">
+                    Others
+                    </div>
+                    <ul id="des"class="list-group list-group-flush">
+                        <li id="des"class="list-group-item text-light"> ---</li>
+                        <li id="des"class="list-group-item text-light">---</li>
+                        
+                    </ul>
+                    </div>
+                    <div id="des"class="card col-4" style="width: 18rem;">
+                    <div class="card-header font-weight bolder">
+                        Our Car Types
+                    </div>
+                    <ul id="des"class="list-group list-group-flush">
+                        <li id="des"  class="list-group-item text-light"> Mercedez</li>
+                        <li id="des" class="list-group-item text-light">Toyoto</li>
+                        <li  id="des"class="list-group-item text-light">Range</li>
+                        
+                    </ul>
+                    </div>
+    
+                </div>
+    
+    
+
+                
+            </div>
+            <div class="tab-pane fade" id="login" role="tabpanel" aria-labelledby="login-tab">
+                <form class="p-3 text-dark">
+                    <div class="form-group text-dark">
+                      <label for="exampleInputEmail1">Email address</label>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group ">
+                      <label for="exampleInputPassword1">Password</label>
+                      <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="form-group form-check">
+                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      
+                    </div>
+                    <button id="bttn" type="submit" class="btn btn-primary">sign In</button>
+                    <p>If  not registered click on below link</p>
+                     <a class="nav-link text-danger" href="register.html">Register here</a>
+                </form>
+
+
+
+            </div>
+            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                <div class="float-left">
+                <form class="text-dark"> 
+                    <label>Name</br>
+                    <input id="name"type="text">
+                    </label>
+                    </br>
+                    <label>Email Address</br>
+                    <input  id="email"type="text">
+                    </label>
+                    </br>
+                    <label>Subject/Message</br>
+                    <input id="mes" style="height:150px"type="text">
+                    </label>
+                    </br>
+                    <button onclick="display()" id ="sub">Submit</button>
+                </form>
+                
+            </div>
+                    <div class="float-right text-dark p-5 mt-5 mr-3">
+                        <h3>How Can we help you?</h3>
+                        <p> If you don't find what u need ,Please fill the contact form</br>
+                        as soon we get message we will reply you with your solutions.</br>
+                            contact number -9568795662
+                        </p>
+                    </div>
+
+                <div id="displaying "class="float-left mt-5">
+                    <table id ="tab">
+                        <thead>
+                            <tr>
+                                <td>S.NO</td>
+                                <td>Email address </td>
+                                <td>Name </td>
+                                
+                                <td>Time</td>
+                            </tr>
+                        </thead>
+                    </table>  
+                    
+                </div>
+                
+               
+            </div>
+            <div class="tab-pane fade" id="terms" role="tabpanel" aria-labelledby="terms-tab">
+                <h1 class="text-dark">Terms and Condition</h1>
+                <p class="text-dark">
+                    Help protect your website and its users with clear and fair website terms and conditions. These terms and conditions for a website set out key issues such as acceptable use, privacy, cookies, registration and passwords, intellectual property, links to other sites, termination and disclaimers of responsibility. Terms and conditions are used and necessary to protect a website owner from liability of a user relying on the information or the goods provided from the site then suffering a loss.
+                    
+                    Making your own terms and conditions for your website is hard, not impossible, to do. It can take a few hours to few days for a person with no legal background to make. But worry no more; we are here to help you out.
+                    
+                    All you need to do is fill up the blank spaces and then you will receive an email with your personalized terms and conditions.
+                    
+                    Looking for a Privacy Policy? Check out Privacy Policy Generator.
+                    
+                    The accuracy of the generated document on this website is not legally binding. Use at your own risk.</p>
+            </div>
+           
+            </div>
+            </nav>
+            
+        </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src = "contact.js" >
+  
+       
+    </script>
+    <script type="text/javascript" src="login.js">
+
+    </script>
+   
+
+    </body>
+    </html>
